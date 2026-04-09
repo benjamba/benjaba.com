@@ -1,0 +1,6 @@
+title: Benjamin Barron
+description: Biomedical engineering student at the University of Michigan – Ann Arbor, passionate about research at the intersection of engineering and clinical medicine.
+url: "https://benjamba.github.io"
+baseurl: "/benjaba.com"
+markdown: kramdown
+permalink: pretty

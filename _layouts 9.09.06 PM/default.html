@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  </head>
+  <body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="site-nav" id="site-nav">
+      <div class="nav-inner">
+
+        <a href="#top" class="nav-logo">Benjamin Barron</a>
+
+        <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+
+          <!-- Experiences dropdown -->
+          <div class="nav-dropdown-wrapper">
+            <button class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true" id="exp-dropdown-btn">
+              Experiences
+              <svg class="caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="exp-dropdown" role="menu" aria-labelledby="exp-dropdown-btn">
+              <a href="#structural-biology" class="dropdown-item" role="menuitem">Structural Biology Research</a>
+              <a href="#dengue-modeling" class="dropdown-item" role="menuitem">Dengue Transmission Modeling</a>
+              <a href="#medical-device" class="dropdown-item" role="menuitem">Medical Device Development</a>
+              <a href="#barronmd" class="dropdown-item" role="menuitem">BarronMD — YouTube</a>
+            </div>
+          </div>
+
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="/resume.pdf" class="nav-link nav-cta" target="_blank" rel="noreferrer noopener">Resume</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </header>
+
+    <!-- ===== PAGE CONTENT ===== -->
+    <main id="top">
+      {{ content }}
+    </main>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

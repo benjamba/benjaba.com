@@ -248,7 +248,7 @@ ul { list-style: none; }
   left: 0;
   right: 0;
   bottom: -25%;
-  background-image: url('/assets/images/coverphoto.jpeg');
+  background-image: url('../images/coverphoto.jpeg');
   background-size: cover;
   background-position: center top;
   background-color: #B8CCE4;

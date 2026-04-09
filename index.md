@@ -14,7 +14,7 @@ title: Home
     <!-- Top: #BFCFE6 block with headshot -->
     <div class="hero-card__photo">
       <div class="headshot-frame">
-        <img src="/assets/images/headshot.jpg" alt="Benjamin Barron professional headshot" class="headshot-img" />
+        <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Benjamin Barron professional headshot" class="headshot-img" />
         <!-- Placeholder silhouette shown until a real photo is added -->
         <div class="headshot-placeholder" aria-hidden="true">
           <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,9 +35,9 @@ title: Home
         Explore my research and experiences here!
       </p>
       <div class="hero-ctas">
-        <a href="/resume.pdf" class="btn btn-primary" target="_blank" rel="noreferrer noopener">Resume</a>
+        <a href="{{ '/resume.pdf' | relative_url }}" class="btn btn-primary" target="_blank" rel="noreferrer noopener">Resume</a>
         <a href="https://linkedin.com/in/placeholder" class="btn btn-outline" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-        <a href="/portfolio.pdf" class="btn btn-outline" target="_blank" rel="noreferrer noopener">Portfolio (PDF)</a>
+        <a href="{{ '/portfolio.pdf' | relative_url }}" class="btn btn-outline" target="_blank" rel="noreferrer noopener">Portfolio (PDF)</a>
       </div>
     </div>
 
@@ -160,7 +160,7 @@ title: Home
     <div class="contact-right fade-up">
       <h3 class="quick-links-heading">Quick Links</h3>
       <ul class="quick-links">
-        <li><a href="/resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a></li>
+        <li><a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noreferrer noopener">Resume</a></li>
         <li><a href="#experiences">Research &amp; Experiences</a></li>
       </ul>
     </div>
